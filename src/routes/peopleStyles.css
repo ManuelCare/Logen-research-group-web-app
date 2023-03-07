@@ -1,0 +1,143 @@
+:root {
+  --primary: #5aecc1;
+  --dark: #004124;
+  --secondary: #3754c8;
+  --secondary-lighter: #57c7ba;
+  --light: #d9eddf;
+}
+.People {
+  background: var(--primary);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  grid-auto-rows: minmax(400px, auto);
+  row-gap: 20px;
+  column-gap: 40px;
+  padding: 40px;
+  justify-items: center;
+}
+
+.blur{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(237, 241, 238);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 250px;
+  height: minmax(380px,auto);
+  filter: opacity(50%);
+  user-select: none;
+}
+.PersonCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(237, 241, 238);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 250px;
+  height: minmax(380px,auto);
+}
+.Image {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  height: 170px;
+  width: 170px;
+  border-radius: 100%;
+  user-select: none;
+}
+
+#name {
+  font-size: large;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 5px;
+}
+#studies {
+  color: grey;
+  
+  margin-bottom: 5px;
+}
+#position {
+  margin-top: 1px;
+  color: var(--secondary);
+}
+#showMore {
+  color: lightseagreen;
+  cursor: pointer;
+  position: relative;
+  
+  margin-top: auto;
+  user-select: none;
+  transition: 0.3s ease-in-out;
+}
+#showMore-Disabled{
+  color: lightseagreen;
+  cursor:default;
+  position: relative;
+  margin-top: auto;
+  user-select: none;
+}
+#showMore:hover{
+  color: var(--dark);
+}
+.VerbiagePersonCard {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: minmax(380px,auto);
+  background: rgb(237, 241, 238);
+  border-radius: 10px;
+  border: solid var(--primary);
+  visibility:visible;
+  padding: 20px
+}
+.hidden{
+  opacity: 0;
+  visibility: hidden;
+}
+
+#close{
+  position: absolute;
+  cursor:pointer;
+  user-select:none;
+  color: white;
+  top: 10px;
+  right: 10px;
+  height: 40px;
+  width: 40px;
+}
+
+#desc{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: left;
+  color: var(--dark);
+}
+#mail{
+  user-select: all;
+  color:gray;
+}
+#phone{
+  user-select: all;
+  color:gray;
+}
+
+#vpc-w-1{
+  padding:5px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#vpc-w-2{
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
